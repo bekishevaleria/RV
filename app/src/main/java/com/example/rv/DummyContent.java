@@ -8,8 +8,8 @@ public class DummyContent {
     public static final List<DummyItem> ITEMS = new ArrayList<DummyItem>();
     private static final int COUNT = 25;
 
-    static {
-        // Добавление элементов в список.
+    public static void init()
+    {
         for (int k = 1; k <= COUNT; k++) {
             StringBuilder builder = new StringBuilder();
             builder.append("Информация об элементе:   ").append(k);
